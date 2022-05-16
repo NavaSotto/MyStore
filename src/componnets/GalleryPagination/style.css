@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+}
+
+.paginationClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  /* Center horizontally*/
+  margin: 0 auto;
+  background: transparent;
+  padding-bottom: 15px;
+
+
+}
+.paginationClass a{
+  color: #53604e;
+}
+
+.activeButton {
+  font-weight: bolder;
+}

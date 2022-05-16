@@ -1,0 +1,19 @@
+
+
+.valueClass{
+color:rgb(236, 236, 239);
+z-index: 1;
+padding: 10px;
+}
+.keyClass{
+font-weight: bold;
+padding: 10px;
+
+
+}
+.line{
+  margin-bottom: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+

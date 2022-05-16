@@ -1,0 +1,96 @@
+.Navbar {
+  padding: 5px;
+  margin: 2px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  color: #111;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 35px;
+  ;
+
+}
+
+.categoriesNavLink {
+  padding: 5px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #1e4150;
+  text-decoration: none;
+}
+
+.categoriesNavLink:hover {
+  color: #ff5555;
+
+}
+
+.clickNavLink {
+  color: #ff5555;
+
+}
+
+
+.visibleClass {
+  visibility: visible;
+}
+
+.hideClass {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+
+
+
+
+.btnClass {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #78966a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.btnClass:hover {
+  background-color: #78966a
+}
+
+.btnClass:active {
+  background-color: #78966a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
