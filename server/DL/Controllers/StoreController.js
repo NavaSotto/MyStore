@@ -1,4 +1,5 @@
 const axios = require("axios");
+const appReq = require("../../baseUrlReq");
 
 //=====================================================================
 
@@ -14,7 +15,7 @@ function sortResultsById(arr) {
 async function read(reqDetails) {
   const { category, page, per_page, order, sortById } = reqDetails;
   console.log(order);
-  return await axios.get(`https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}&page=${page}&per_page=${per_page}&order=${order}&pretty=true`)
+  return await axios.get(`${appReq.baseUrl} +https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}&page=${page}&per_page=${per_page}&order=${order}&pretty=true`)
     .then(res => {
       const totalHits = parseInt(res.data.totalHits);
       var currentPageImgArr = res.data.hits.map(({ id, webformatURL }) => ({ "id": id, "src": webformatURL }));
@@ -32,7 +33,7 @@ async function read(reqDetails) {
 
 async function readOne(id) {
   console.log("in readone in store controller " + id);
-  return await axios.get(`https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&id=${id}`)
+  return await axios.get(`${appReq.baseUrl} + https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&id=${id}`)
     .then(res => {
       const result = res.data.hits[0];
       return result;
