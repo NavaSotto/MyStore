@@ -1,7 +1,10 @@
 const axios = require("axios");
+//for deploy -change requests
+//const baseURL = require( "../../baseUrlReq");
+//const port = process.env.PORT || '8080';
+//const baseURL = 'https://my-store2022.herokuapp.com:' + port;
 
 //=====================================================================
-
 async function create(data, token) {
 
 }
@@ -12,8 +15,9 @@ function sortResultsById(arr) {
 }
 //=====================================================================
 async function read(reqDetails) {
+  console.log(baseURL);
+
   const { category, page, per_page, order, sortById } = reqDetails;
-  console.log(order);
   return await axios.get(`https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}&page=${page}&per_page=${per_page}&order=${order}&pretty=true`)
     .then(res => {
       const totalHits = parseInt(res.data.totalHits);
@@ -31,7 +35,6 @@ async function read(reqDetails) {
 //=====================================================================
 
 async function readOne(id) {
-  console.log("in readone in store controller " + id);
   return await axios.get(`https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&id=${id}`)
     .then(res => {
       const result = res.data.hits[0];
