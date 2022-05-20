@@ -1,6 +1,8 @@
+const axios = require("axios");
 const port = process.env.PORT || '8080';
 
-const appReq = axios.create({
+
+let appReq = axios.create({
   baseURL: 'https://my-store2022.herokuapp.com:' + port,
   withCredentials: false, // This is the default
   crossDomain: true,

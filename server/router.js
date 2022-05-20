@@ -30,7 +30,6 @@ module.exports = (app) => {
   });
   //=====================================================================
   app.get("/store/:category/:id", async (req, res) => {
-    console.log("in read one");
     const { id } = req.params;
 
     let result;

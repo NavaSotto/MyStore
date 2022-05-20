@@ -82,7 +82,7 @@ export default function ProductsCategory() {
 
 
   return (<div >
-    {products ?
+    {!loading ?
       <div>
         <div className="flexClass">
 
