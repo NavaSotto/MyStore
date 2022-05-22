@@ -15,6 +15,10 @@ function sortResultsById(arr) {
 }
 //=====================================================================
 async function read(reqDetails) {
+<<<<<<< HEAD
+=======
+  console.log(baseURL);
+>>>>>>> 6e369c2d1b4d72debd04033deeb6309212871fcb
 
   const { category, page, per_page, order, sortById } = reqDetails;
   return await axios.get(`https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}&page=${page}&per_page=${per_page}&order=${order}&pretty=true`)
