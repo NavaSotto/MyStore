@@ -85,16 +85,15 @@ export default function ProductsCategory() {
     {!loading ?
       <div>
         <div className="flexClass">
-
-          <label class="switch">
-            <input class="switch__input" type="checkbox" onChange={() => setSortById(!sortById)} />
-            <i class="switch__icon"></i>
-            <span class="switch__span">sort by id</span>
+          <label className="switch">
+            <input className="switch__input" type="checkbox" onChange={() => setSortById(!sortById)} />
+            <i className={`switch__icon ${sortById ? 'activeToggle' : ''}`}></i>
+            <span className="switch__span">sort by id</span>
           </label>
-          <label class="switch">
-            <input class="switch__input" type="checkbox" onChange={() => setSortByDate(!sortByDate)} />
-            <i class="switch__icon"></i>
-            <span class="switch__span">sort by date</span>
+          <label className="switch">
+            <input className="switch__input" type="checkbox" onChange={() => setSortByDate(!sortByDate)} />
+            <i className={`switch__icon ${sortById ? 'activeToggle' : ''}`}></i>
+            <span className="switch__span">sort by date</span>
           </label>
         </div>
         <div className="flexClass">
